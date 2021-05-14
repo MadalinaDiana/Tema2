@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <title>Tema2</title>
+    <link rel = "stylesheet" href = "tema2.css" />
+    <script src="tema2.js"></script>
+    <script src="cronometru.js"></script>
+    
+    </head>
+    <body>
+        <h2>Exercitiul 1</h2>
+        <h1 class="h1">Bara de progresare</h1>
+        <div id="myProgress">
+            <div id="myBar">0%</div>
+        </div>
+        <br>
+<button onclick="move()" class="button">Apasa butonul</button> 
+<br>
+<h2>Exercitiul 2</h2>
+<h1 class="h1">Cronometru</h1>
+<center>
+<div class = "cronometru">
+<form name="form_main">
+    <div>
+      <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+    </div>
+  
+    <br />
+  
+    <button type="button" class="btn-crn"  name="start">start</button>
+    <button type="button" class="btn-crn"  name="pause">pause</button>
+    <button type="button" class="btn-crn"  name="reset">reset</button>
+  </form>
+<script>
+"use strict";
+
+let hour = 0;
+let minute = 0;
+let second = 0;
+let millisecond = 0;
+
+let cron;
+
+document.form_main.start.onclick = () => start();
+document.form_main.pause.onclick = () => pause();
+document.form_main.reset.onclick = () => reset();
+</script>
+</div>
+</center>
+    </body>
+</html>
